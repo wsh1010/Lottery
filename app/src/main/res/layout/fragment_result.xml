@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/goldground" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/crown" />
+
+            <TextView
+                android:id="@+id/text1st"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1등 당첨 10명"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/crown" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text2nd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="2등 당첨 x번"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/text3rd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="3등 당첨 x번"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/resultTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="당첨 번호 (1006회)"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/resultball1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@drawable/blueball" />
+
+            <TextView
+                android:id="@+id/resultball2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@drawable/blueball" />
+
+            <TextView
+                android:id="@+id/resultball3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@drawable/blueball" />
+
+            <TextView
+                android:id="@+id/resultball4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@drawable/blueball" />
+
+            <TextView
+                android:id="@+id/resultball5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@drawable/blueball" />
+
+            <TextView
+                android:id="@+id/resultball6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@drawable/blueball" />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/plus" />
+
+            <TextView
+                android:id="@+id/resultballBonus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@drawable/blueball" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1006회 내 번호"
+            android:gravity="center" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/round1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1R : "/>
+            <TextView
+                android:id="@+id/lastballs11"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/lastballs12"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/lastballs13"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/lastballs14"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/lastballs15"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/lastballs16"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/round2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2R : "/>
+            <TextView
+                android:id="@+id/lastballs21"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/lastballs22"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/lastballs23"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/lastballs24"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/lastballs25"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/lastballs26"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/round3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3R : "/>
+            <TextView
+                android:id="@+id/lastballs31"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/lastballs32"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/lastballs33"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/lastballs34"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/lastballs35"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/lastballs36"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/round4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4R : "/>
+            <TextView
+                android:id="@+id/lastballs41"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/lastballs42"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/lastballs43"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/lastballs44"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/lastballs45"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/lastballs46"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/round5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5R : "/>
+            <TextView
+                android:id="@+id/lastballs51"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/lastballs52"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/lastballs53"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/lastballs54"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/lastballs55"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/lastballs56"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:textSize="10sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/resultEmpty"
+        android:visibility="gone"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/empty"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

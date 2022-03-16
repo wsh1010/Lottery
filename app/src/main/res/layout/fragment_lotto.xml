@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LottoFragment">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/completeLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/dueDate"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="1005회차 (2021.03.12 발표)"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/gameStartButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:lottie_autoPlay="false"
+                app:lottie_rawRes="@raw/gumball_machine" />
+
+            <LinearLayout
+                android:id="@+id/ballScreen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/round1_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/select1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="1R  : "
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select1_Ball1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select1_Ball2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select1_Ball3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select1_Ball4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select1_Ball5"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select1_Ball6"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/round2_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/select2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="2R  : "
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select2_Ball1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select2_Ball2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select2_Ball3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select2_Ball4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select2_Ball5"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select2_Ball6"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/round3_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/select3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="3R  : "
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select3_Ball1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select3_Ball2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select3_Ball3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select3_Ball4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select3_Ball5"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select3_Ball6"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/round4_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/select4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="4R  : "
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select4_Ball1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select4_Ball2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select4_Ball3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select4_Ball4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select4_Ball5"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select4_Ball6"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/round5_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/select5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="5R  : "
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select5_Ball1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select5_Ball2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select5_Ball3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select5_Ball4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select5_Ball5"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/select5_Ball6"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/redball"
+                        android:gravity="center"
+                        android:text="@string/ball_temp_num"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/settingsButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/drawBallButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/settings_button" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/drawBallButton"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/settingsButton"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/draw_button" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
